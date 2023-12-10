@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const API = axios.create({ baseURL: process.env.BACKEND_URL, });
+const API = axios.create({ baseURL: 'https://capture-app-theta.vercel.app/', });
 
 API.interceptors.request.use((req) => {
   if (localStorage.getItem('profile')) {
