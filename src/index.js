@@ -7,7 +7,7 @@ import thunk from 'redux-thunk';
 import { reducers } from './reducers';
 import App from './App';
 import './index.css';
-
+//  redeploy
 const store = createStore(reducers, compose(applyMiddleware(thunk)));
 
 ReactDOM.render(
